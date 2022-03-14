@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Montserrat";
+        scroll-behavior: smooth;
+      }
+      .demo{
+        position: absolute;
+left: 47.36%;
+right: 0.97%;
+top: 41.11%;
+bottom: 1.25%;
+
+background: #4494D6;
+filter: blur(500px);
+      }
+      .demo1{
+        position: absolute;
+width: 30%;
+height: 30%;
+left: 60%;
+top: 0px;
+background: #960087;
+filter: blur(500px);
+      }
+      .demo2{
+        position: absolute;
+left: 65.53%;
+right: 0;
+top: 31.51%;
+bottom: 10.85%;
+
+background: #009688;
+filter: blur(500px);
+      }
+
+      body {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.12)
+          ),
+          #121212;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 95.41%;
+        height: 134px;
+        left: 33px;
+        top: 2.29%;
+        background-color: rgb(43, 42, 42);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        z-index: 3;
+      }
+      .logo img {
+        position: absolute;
+        left: 2.18%;
+        top: 15px;
+        height: 104.25px;
+        width: 8%;
+        margin: auto;
+      }
+      .logo h1 {
+        color: white;
+        position: absolute;
+        width: 447px;
+        height: 29.52px;
+        left: 16.3%;
+
+        top: 52px;
+        bottom: 52.48px;
+
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+      .img1 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        right: 20.66%;
+      }
+      .team {
+        position: absolute;
+        top: 60px;
+        left: 81.58%;
+        height: 14.36px;
+        width: 3.34%;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      .img2 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 87.19%;
+      }
+      .img3 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 64.19%;
+      }
+      .img4 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 72.19%;
+      }
+      .aide,.flow,.link{
+        position: absolute;
+        top: 60px;
+        left: 59%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+
+      .flow{
+        left: 66.6%;
+      }
+      .link{
+        left: 74.5%;
+      }
+      .access {
+        position: absolute;
+        top: 60px;
+        left: 89.44%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      main .back {
+        position: absolute;
+        background-color: rgb(121, 120, 120);
+        width: 27.77%;
+        top: 55.6%;
+        height: 37.17%;
+        left: 16.8%;
+        border-radius: 5%;
+      }
+      .submit{
+        display: none;
+      }
+      .Tname,
+      .Tdesig,
+      .Vname,
+      .Vdesig,
+      .Aname,
+      .Adesig,
+      .AMname,
+      .AMdesig,
+      .Sname,
+      .Sdesig {
+        position: absolute;
+        text-align: center;
+        top: 7%;
+        left: 36%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        color: white;
+      }
+      input [type="submit"] {
+        display: none;
+      }
+      .Vname,
+      .Vdesig,
+      .Aname,
+      .Adesig,
+      .AMname,
+      .AMdesig,
+      .Sname,
+      .Sdesig {
+        display: none;
+      }
+      .Tdesig,
+      .Vdesig,
+      .Adesig,
+      .Sdesig,
+      .AMdesig {
+        position: absolute;
+        text-align: center;
+        top: 18%;
+        left: 13%;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .Tdesc,
+      .Vdesc,
+      .Sdesc,
+      .Adesc,
+      .AMdesc {
+        position: absolute;
+        text-align: center;
+        top: 33%;
+        left: 6%;
+        width: 88%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
+      }
+      .Vdesc {
+        top: 40%;
+      }
+      .Vdesig {
+        left: 20%;
+      }
+      .AMname {
+        left: 26%;
+      }
+      .Adesc {
+        top: 30%;
+      }
+      .Vdesc,
+      .Sdesc,
+      .Adesc,
+      .AMdesc {
+        display: none;
+      }
+      main > img {
+        width: 40px;
+        height: 42.8px;
+        position: absolute;
+        top: 68.4%;
+        left: 48.125%;
+      }
+      #arrowl {
+        left: 10%;
+        transform: rotate(180deg);
+        z-index: 2;
+      }
+      #arrowr {
+        z-index: 2;
+      }
+      main div img {
+        position: absolute;
+        top: 24.18%;
+        left: 30.1%;
+        transform: translateX(-50%);
+        height: 30%;
+        aspect-ratio: 300/300;
+      }
+      .Vimg,
+      .Aimg,
+      .AMimg,
+      .Simg {
+        display: none;
+      }
+      .backimg img:nth-child(1) {
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        top: 0;
+        right: 0;
+        filter: blur(25px);
+      }
+      .backimg img:nth-child(2) {
+        position: absolute;
+        width: 30%;
+        height: 50%;
+        bottom: 0;
+        filter: blur(50px);
+        right: 20%;
+      }
+      .backimg img:nth-child(3) {
+        position: absolute;
+        width: 35%;
+        height: 65%;
+        bottom: 5%;
+        mix-blend-mode: overlay;
+        opacity: 0.2;
+        right: 0%;
+        z-index: 2;
+      }
+      .backimg img:nth-child(4) {
+        position: absolute;
+        width: 35%;
+        height: 60%;
+        bottom: 10%;
+        right: 0%;
+        filter: blur(25px);
+        z-index: 1;
+      }
+      .backimg img:nth-child(5) {
+        position: absolute;
+        width: 35%;
+        height: 30%;
+        bottom: 0%;
+        right: 0%;
+        filter: blur(25px);
+        z-index: 1;
+      }
+      .backimg img:nth-child(6){
+        display: none;
+      }
+      .backimg img:nth-child(7){
+        display: none;
+      }
+#icon, #drop{
+  display: none;
+}
+      form {
+        position: absolute;
+        width: 35%;
+        height: 65%;
+        bottom: 5%;
+        right: 0%;
+        z-index: 2;
+      }
+      form input {
+        position: absolute;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        left: 10%;
+        color: white;
+      }
+      form input:nth-child(1) {
+        top: 10%;
+      }
+      form input:nth-child(2) {
+        top: 28%;
+      }
+      form input:nth-child(3) {
+        top: 46%;
+      }
+      form input:nth-child(4) {
+        top: 64%;
+      }
+      form input:nth-child(5) {
+        top: 82%;
+      }
+
+      form .img1 {
+        top: 18%;
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        left: 10%;
+      }
+      form .img2 {
+        top: 36%;
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        left: 10%;
+      }
+      form .img3 {
+        top: 54%;
+
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        left: 10%;
+      }
+      form .img4 {
+        top: 72%;
+
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        left: 10%;
+      }
+      form .img5 {
+        top: 90%;
+
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        left: 10%;
+      }
+      .Tdot,
+      .Vdot,
+      .Adot,
+      .AMdot,
+      .Sdot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 95.5%;
+      }
+      .Tdot {
+        left: 25%;
+      }
+      .Vdot {
+        left: 27.5%;
+      }
+      .Adot {
+        left: 30%;
+      }
+      .AMdot {
+        left: 32.5%;
+      }
+      .Sdot {
+        left: 35%;
+      }
+      a button{
+        display: none;
+      }
+      #join{
+        position: absolute;
+          border-radius: 10%;
+         border: none;
+          top: 25%;
+          left: 72%;
+          transform: translateX(-50%);
+          width: 60%;
+          font-size: 25px;
+          height: 7%;
+          background-color: rgba(88, 0, 88, 0);
+          outline: none;
+          color: white;
+      }
+      #join:hover{
+        cursor: pointer;
+      }
+      @media (max-width: 480px) {
+        body{
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+        }
+        .backimg img:nth-child(3) {
+          position: absolute;
+          width: 102%;
+          height: 95%;
+          left: -2%;
+          top: 99%;
+          filter: blur(500px);
+        }
+        .backimg img:nth-child(1) {
+          filter: blur(50px);
+        }
+        .backimg img:nth-child(2) {
+          filter: blur(50px);
+        }
+        .demo{
+          background: #960087;
+        }
+        .demo1{
+
+background: #009688;
+        }
+        .backimg img:nth-child(6){
+        display: block;
+        position: absolute;
+          width: 100%;
+          height: 77%;
+          filter: blur(50px);
+          left: 0%;
+          top: 102%;
+          
+      }
+      .backimg img:nth-child(7){
+        display: block;
+        position: absolute;
+          width: 100%;
+          height: 53%;
+          filter: blur(50px);
+          left: 0%;
+          top: 142%;
+    
+      }
+
+        form {
+          position: absolute;
+          width: 90%;
+          left: 5%;
+          top: 111%;
+          height: 77%;
+        }
+        form input {
+          position: absolute;
+          border: none;
+          outline: none;
+          background-color: rgba(0, 0, 0, 0);
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 27px;
+          left: 10%;
+          width: 60%;
+          color: white;
+        }
+        form input:nth-child(1) {
+          top: 5%;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        form input:nth-child(2) {
+          top: 20%;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        form input:nth-child(3) {
+          top: 35%;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        form input:nth-child(4) {
+          top: 50%;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        form input:nth-child(5) {
+          top: 65%;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .Tdot,
+      .Vdot,
+      .Adot,
+      .AMdot,
+      .Sdot{
+        top: 87.5%;
+      }
+        form .img1 {
+          top: 10%;
+          position: absolute;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+        }
+        form .img2 {
+          top: 25%;
+          position: absolute;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+        }
+        form .img3 {
+          top: 40%;
+
+          position: absolute;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+        }
+        form .img4 {
+          top: 55%;
+
+          position: absolute;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+        }
+        form .img5 {
+          top: 70%;
+          position: absolute;
+          height: 2px;
+          width: 80%;
+          left: 10%;
+        }
+        .submit {
+          display: block;
+          top: 175%;
+          width: 35%;
+          height: 7%;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          background-color: rgb(121, 120, 120);
+          font-size: 25px;
+          text-transform: uppercase;
+          border-radius: 5%;
+          border: none;
+          color: white;
+          outline: none;
+          z-index: 2;
+        }
+        .Tname,
+        .Tdesig,
+        .Vname,
+        .Vdesig,
+        .Aname,
+        .Adesig,
+        .AMname,
+        .AMdesig,
+        .Sname,
+        .Sdesig {
+          font-size: 18px;
+          line-height: 22px;
+          color: white;
+        }
+        .Tdesc,
+        .Vdesc,
+        .Sdesc,
+        .Adesc,
+        .AMdesc {
+          font-size: 18px;
+          line-height: 22px;
+          color: white;
+        }
+        nav {
+          width: 91.66%;
+          height: 64px;
+          left: 4.16%;
+          top: 18px;
+        }
+        .logo img {
+          left: 5.45%;
+          top: 11px;
+          height: 45.65px;
+          width: 50px;
+        
+        }
+        .logo h1 {
+          width: 164px;
+          height: 13px;
+          left: 28.4%;
+          top: 26px;
+
+          font-family: "Montserrat";
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+
+          letter-spacing: 0.32em;
+        }
+        .menu {
+          display: none;
+        }
+        main div img {
+          top: 12.18%;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 19%;
+          aspect-ratio: 300/300;
+        }
+        #arrowl {
+          width: 22px;
+          height: 22px;
+          top: 55%;
+          left: 5%;
+        }
+        #arrowr {
+          width: 22px;
+          height: 22px;
+          top: 55%;
+          left: 90%;
+        }
+        main .back {
+          width: 70%;
+          left: 15%;
+          height: 52%;
+          top: 33%;
+          z-index: 2;
+        }
+        .Tdesig,
+        .Vdesig,
+        .Adesig,
+        .AMdesig,
+        .Sdesig {
+          width: 95%;
+          left: 2.5%;
+        }
+        .AMdesc {
+          top: 28%;
+        }
+        .Tdot {
+          left: 40%;
+        }
+        .Vdot {
+          left: 45%;
+        }
+        .Adot {
+          left: 50%;
+        }
+        .AMdot {
+          left: 55%;
+        }
+        .Sdot {
+          left: 60%;
+        }
+        a button {
+          display: block;
+          position: absolute;
+          border-top: black solid 1px;
+          top: 93.2%;
+          left: 50%;
+          border-radius: 10px;
+          border-bottom-left-radius: 0%;
+          border-bottom-right-radius: 0%;
+          transform: translateX(-50%);
+          width: 60%;
+          font-size: 25px;
+          height: 7%;
+          background-color: saddlebrown;
+          outline: none;
+          color:black;
+        }
+.submit{
+  display: block;
+}
+#join{
+  display: none;
+}
+.drop .img1 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 33%;
+          top: 90px;
+        }
+        .drop .img2 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left:54%;
+          top: 90px;
+        }
+        .drop .img3 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 73%;
+          top: 90px;
+        }
+        .drop a {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          position: absolute;
+          width: 15.15%;
+          height: 15px;
+          top: 90px;
+          text-decoration: none;
+          color: white;
+        }
+        .a1 {
+          left: 19%;
+        }
+
+        .a2 {
+          left: 38%;
+        }
+        .a3 {
+          left: 59%;
+        }
+        .a4 {
+          left: 78%;
+        }
+        .arrow {
+          left: 46.11%;
+          top: 777px;
+        }
+        #icon{
+       display: block;
+     }
+     .icon img {
+          position: absolute;
+          width: 8%;
+          height: 2px;
+          left: 85.15%;
+        }
+        .icon .img1 {
+          top: 23px;
+        }
+        .icon .img2 {
+          top: 31px;
+        }
+        .icon .img3 {
+          top: 39px;
+        }
+     .menu{
+       display: none;
+     }
+        @media (max-height: 740px) {
+          main .back {
+            top: 36%;
+            height: 50%;
+          }
+          main div img {
+            top: 15%;
+          }
+          .Tname,
+          .Tdesig,
+          .Vname,
+          .Vdesig,
+          .Aname,
+          .Adesig,
+          .AMname,
+          .AMdesig,
+          .Sname,
+          .Sdesig {
+            font-size: 16px;
+            line-height: 18px;
+          }
+          .Tdesc,
+          .Vdesc,
+          .Sdesc,
+          .Adesc,
+          .AMdesc {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          .Adesc {
+            top: 26%;
+          }
+          .Adesig {
+            top: 17%;
+          }
+          .Tdot,
+          .Vdot,
+          .Adot,
+          .AMdot,
+          .Sdot {
+            width: 7px;
+            height: 7px;
+          }
+          .arrowl,
+          .arrowr {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="logo">
+        <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+
+        <h1>NEOS HEALTHTECH</h1>
+      </div>
+      <div class="menu">
+         
+        <a class="aide" href="aide.html">AIDE</a>
+         <img class="img3" src="Line 2 (1).png" alt="|" />
+         <a class="flow" href="flow.html">FLOW</a>
+         <img class="img4" src="Line 2 (1).png" alt="|" />
+         <a class="link" href="link.html">LINK</a>
+         <img class="img1" src="Line 2 (1).png" alt="|" />
+         <a class="team" href="team.html">TEAM</a>
+         <img class="img2" src="Line 2 (1).png" alt="|" />
+         <a class="access" href="#">GET ACCESS</a>
+       </div>
+      <div class="icon" id="icon">
+        <img class="img1" src="Rectangle 83.png" alt="" />
+        <img class="img2" src="Rectangle 83.png" alt="" />
+        <img class="img3" src="Rectangle 83.png" alt="" />
+      </div>
+      <div class="drop" id="drop">
+        <a class="a1" href="aide.html">AIDE</a>
+        <img class="img1" src="Line 2 (1).png" alt="" />
+        <a class="a2" href="flow.html">FLOW</a>
+        <img class="img2" src="Line 2 (1).png" alt="" />
+        <a class="a3" href="link.html">LINK</a>
+        <img class="img3" src="Line 2 (1).png" alt="" />
+        <a class="a4" href="team.html">TEAM</a>
+    
+      </div>
+    </nav>
+
+    <main>
+      <div>
+        <img src="tusha.png" alt="" class="Timg" />
+        <img src="vikki.png" alt="" class="Vimg" />
+        <img src="avnish.png" alt="" class="Aimg" />
+        <img src="Dr amit.png" alt="" class="AMimg" />
+        <img src="shrava.png" alt="" class="Simg" />
+      </div>
+
+      <div class="back">
+        <h2 class="Tname">TUSHAR</h2>
+        <h2 class="Tdesig">CHIEF OPERATING OFFICER</h2>
+        <p class="Tdesc">
+          Tushar earned his Bachelor’s of Technology from SRM University. He has
+          over 5 years of experience in operations and finance. He oversees all
+          of Neos’s ongoing operations, finances and procedures, and is
+          responsible for driving Neos to achieve and surpass business goals and
+          objectives.
+        </p>
+
+        <h2 class="Vname">VIGNESH</h2>
+        <h2 class="Vdesig">
+          CHIEF RESEARCH AND <br />
+          STRATEGY OFFICER
+        </h2>
+        <p class="Vdesc">
+          Vighnesh completed his Bachelor’s of Technology from SRM University.
+          He has over 4 years of experience in research and business
+          development. He leads the research initiatives at Neos to build
+          innovative and robust products.
+        </p>
+        <h2 class="Aname">AVNISH</h2>
+        <h2 class="Adesig">CHIEF EXECUTIVE OFFICER</h2>
+        <p class="Adesc">
+          Avnish completed his Bachelor’s of Business Administration from St.
+          Jospeh’s College of Commerce. He has over 5 years of experience in
+          business strategy and has gained entrepreneurial experience by
+          successfully leading ventures in the past. He is responsible for
+          Neos’s vision and also oversees product design.
+        </p>
+        <h2 class="AMname">DR. AMIT GUPTA</h2>
+        <h2 class="AMdesig">PARTNER/CHIEF ADVISOR</h2>
+        <p class="AMdesc">
+          Dr. Amit is a radiologist by profession with over 25 years of
+          experience. He also completed his MBA from Indian School of Business,
+          Hyderabad. He successfully leads a chain of over 11 diagnostic centres
+          called Usmanpura Imaging Centre. He provides the team with resources
+          required to aid the growth of Neos.
+        </p>
+        <h2 class="Sname">SHRAVAN</h2>
+        <h2 class="Sdesig">CHIEF TECHNOLOGY OFFICER</h2>
+        <p class="Sdesc">
+         Shravan is an alumnus from SRM University with extensive technical expertise and
+          over 8 years of experience in the technical field. He is responsible
+          for Neos’s technical vision, heading up all aspects of technological
+          development.
+        </p>
+      </div>
+
+      <img id="arrowr" src="Polygon 2.png" alt="" />
+      <img id="arrowl" src="Polygon 2.png" alt="" />
+
+      <img src="Ellipse 15.png" alt="" class="Tdot" />
+      <img src="Ellipse 16.png" alt="" class="Vdot" />
+      <img src="Ellipse 16.png" alt="" class="Adot" />
+      <img src="Ellipse 16.png" alt="" class="AMdot" />
+      <img src="Ellipse 16.png" alt="" class="Sdot" />
+    </main>
+    <div class="backimg">
+      <img src="Ellipse 2.png" alt="" />
+      <img src="Ellipse 4.png" alt="" />
+      <img src="information box (1).png" alt="" />
+      <img src="bg team.png" alt="" />
+      <img src="Ellipse 5.png" alt="" />
+      <img src="Ellipse 8.png" alt="">
+      <img src="Ellipse 6.png" alt="">
+    </div>
+    <button id="join"> <b>JOIN US!</b></button>
+    <a href="#form"><button><b>JOIN US!</b></button></a>
+
+    <form id="form">
+      <input type="text" placeholder="NAME" id="name" />
+
+      <input type="text" placeholder="FIELD OF EXPERTISE"  id="field"/>
+
+      <input type="text" placeholder="CITY"  id="city" />
+
+      <input type="email" placeholder="EMAIL ADDRESS"  id="email" />
+
+      <input type="number" placeholder="PHONE NUMBER"  id="number"/>
+      <img class="img1" src="Line 48.png" alt="" />
+      <img class="img2" src="Line 48.png" alt="" />
+      <img class="img3" src="Line 48.png" alt="" />
+      <img class="img4" src="Line 48.png" alt="" />
+      <img class="img5" src="Line 48.png" alt="" />
+    </form>
+    <input class="submit" type="submit" id="join1" />
+<div class="demo">
+  <div class="demo1"></div>
+    <div class="demo2"></div>
+  
+
+</div>
+    <script>
+      let t0 = document.querySelector(".Timg");
+      let t1 = document.querySelector(".Tname");
+      let t2 = document.querySelector(".Tdesig");
+      let t3 = document.querySelector(".Tdesc");
+      let t4 = document.querySelector(".Tdot");
+
+      let v0 = document.querySelector(".Vimg");
+      let v1 = document.querySelector(".Vname");
+      let v2 = document.querySelector(".Vdesig");
+      let v3 = document.querySelector(".Vdesc");
+      let v4 = document.querySelector(".Vdot");
+
+      let a0 = document.querySelector(".Aimg");
+      let a1 = document.querySelector(".Aname");
+      let a2 = document.querySelector(".Adesig");
+      let a3 = document.querySelector(".Adesc");
+      let a4 = document.querySelector(".Adot");
+
+      let am0 = document.querySelector(".AMimg");
+      let am1 = document.querySelector(".AMname");
+      let am2 = document.querySelector(".AMdesig");
+      let am3 = document.querySelector(".AMdesc");
+      let am4 = document.querySelector(".AMdot");
+
+      let s0 = document.querySelector(".Simg");
+      let s1 = document.querySelector(".Sname");
+      let s2 = document.querySelector(".Sdesig");
+      let s3 = document.querySelector(".Sdesc");
+      let s4 = document.querySelector(".Sdot");
+
+      let x = document.getElementById("arrowr");
+      let y = document.getElementById("arrowl");
+      let x1 = 1;
+      x.addEventListener("click", function () {
+        if (x1 == 1) {
+          t0.style.display = "none";
+          t1.style.display = "none";
+          t2.style.display = "none";
+          t3.style.display = "none";
+          t4.setAttribute("src", "Ellipse 16.png");
+          v0.style.display = "block";
+          v1.style.display = "block";
+          v2.style.display = "block";
+          v3.style.display = "block";
+          v4.setAttribute("src", "Ellipse 11.png");
+          y.style.display = "block";
+          x1 = 2;
+        } else if (x1 == 2) {
+          v0.style.display = "none";
+          v1.style.display = "none";
+          v2.style.display = "none";
+          v3.style.display = "none";
+          v4.setAttribute("src", "Ellipse 16.png");
+          a0.style.display = "block";
+          a1.style.display = "block";
+          a2.style.display = "block";
+          a3.style.display = "block";
+          a4.setAttribute("src", "Ellipse 17 (1).png");
+          x1 = 3;
+        } else if (x1 == 3) {
+          a0.style.display = "none";
+          a1.style.display = "none";
+          a2.style.display = "none";
+          a3.style.display = "none";
+          a4.setAttribute("src", "Ellipse 16.png");
+          am0.style.display = "block";
+          am1.style.display = "block";
+          am2.style.display = "block";
+          am3.style.display = "block";
+          am4.setAttribute("src", "Ellipse 23.png");
+          x1 = 4;
+        } else if (x1 == 4) {
+          am0.style.display = "none";
+          am1.style.display = "none";
+          am2.style.display = "none";
+          am3.style.display = "none";
+          am4.setAttribute("src", "Ellipse 16.png");
+          s0.style.display = "block";
+          s1.style.display = "block";
+          s2.style.display = "block";
+          s3.style.display = "block";
+          s4.setAttribute("src", "Ellipse 29.png");
+          x1 = 5;
+        }
+        else if (x1 == 5) {
+          s0.style.display = "none";
+          s1.style.display = "none";
+          s2.style.display = "none";
+          s3.style.display = "none";
+          s4.setAttribute("src", "Ellipse 16.png");
+          t0.style.display = "block";
+          t1.style.display = "block";
+          t2.style.display = "block";
+          t3.style.display = "block";
+          t4.setAttribute("src", "Ellipse 15.png");
+          x1 = 1;
+        }
+      });
+      y.addEventListener("click", function () {
+        if (x1 == 5) {
+          s0.style.display = "none";
+          s1.style.display = "none";
+          s2.style.display = "none";
+          s3.style.display = "none";
+          s4.setAttribute("src", "Ellipse 16.png");
+          am0.style.display = "block";
+          am1.style.display = "block";
+          am2.style.display = "block";
+          am3.style.display = "block";
+          am4.setAttribute("src", "Ellipse 23.png");
+          x.style.display = "block";
+          x1 = 4;
+        } else if (x1 == 4) {
+          am0.style.display = "none";
+          am1.style.display = "none";
+          am2.style.display = "none";
+          am3.style.display = "none";
+          am4.setAttribute("src", "Ellipse 16.png");
+          a0.style.display = "block";
+          a1.style.display = "block";
+          a2.style.display = "block";
+          a3.style.display = "block";
+          a4.setAttribute("src", "Ellipse 17 (1).png");
+          x1 = 3;
+        } else if (x1 == 3) {
+          a0.style.display = "none";
+          a1.style.display = "none";
+          a2.style.display = "none";
+          a3.style.display = "none";
+          a4.setAttribute("src", "Ellipse 16.png");
+          v0.style.display = "block";
+          v1.style.display = "block";
+          v2.style.display = "block";
+          v3.style.display = "block";
+          v4.setAttribute("src", "Ellipse 11.png");
+          x1 = 2;
+        } else if (x1 == 2) {
+          v0.style.display = "none";
+          v1.style.display = "none";
+          v2.style.display = "none";
+          v3.style.display = "none";
+          v4.setAttribute("src", "Ellipse 16.png");
+          t0.style.display = "block";
+          t1.style.display = "block";
+          t2.style.display = "block";
+          t3.style.display = "block";
+          t4.setAttribute("src", "Ellipse 15.png");
+          x1 = 1;
+        }
+        else if (x1 == 1) {
+          t0.style.display = "none";
+          t1.style.display = "none";
+          t2.style.display = "none";
+          t3.style.display = "none";
+          t4.setAttribute("src", "Ellipse 16.png");
+          s0.style.display = "block";
+          s1.style.display = "block";
+          s2.style.display = "block";
+          s3.style.display = "block";
+          s4.setAttribute("src", "Ellipse 29.png");
+          x1 = 5;
+        }
+      });
+    </script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+       document.getElementById("join").addEventListener("click", function () {
+         let p=document.getElementById("name");
+         let q=document.getElementById("field");
+         let r=document.getElementById("city");
+         let s=document.getElementById("email");
+         let t=document.getElementById("number");
+         let mes ="name:" + p.value + "\n speciality:" + q.value + "\n city:" + r.value + "\n phone:" + s.value+"\n email:" + t.value;
+         let sub = p.value;
+         Email.send({
+           Host: "smtp.gmail.com",
+           Username: "neoshealthtech@gmail.com",
+           Password: "rmllhjiiwvfimduc",
+           To: "me20b038@smail.iitm.ac.in",
+           From: "neoshealthtech@gmail.com",
+           Subject: sub,
+           Body: mes,
+         }).then(function (message) {
+           if (message == "OK") alert("Our team would contact you shortly");
+           else alert("error pls try again later");
+         });
+       });
+     </script>
+     <script>
+      document.getElementById("join1").addEventListener("click", function () {
+        let p=document.getElementById("name");
+        let q=document.getElementById("field");
+        let r=document.getElementById("city");
+        let s=document.getElementById("email");
+        let t=document.getElementById("number");
+        let mes ="name:" + p.value + "\n speciality:" + q.value + "\n city:" + r.value + "\n phone:" + s.value+"\n email:" + t.value;
+        let sub = p.value;
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "neoshealthtech@gmail.com",
+          Password: "rmllhjiiwvfimduc",
+          To: "me20b038@smail.iitm.ac.in",
+          From: "neoshealthtech@gmail.com",
+          Subject: sub,
+          Body: mes,
+        }).then(function (message) {
+          if (message == "OK") alert("Our team would contact you shortly");
+          else alert("error! please try again later");
+        });
+      });
+      let x2=0;
+      let X = document.getElementById("icon");
+      let Y = document.getElementById("drop");
+      let Z = document.getElementById("nav");
+      X.addEventListener("click", function () {
+        if (x2 == 0) {
+          Y.style.display = "block";
+          Z.style.height = "150px";
+          Z.style.zIndex = "5";
+          document.querySelector(".icon .img1").style.display="none"
+          document.querySelector(".icon .img3").style.display="none"
+          document.querySelector(".icon .img2").style.height="3px"
+          x2 = 1;
+
+        } else {
+          Y.style.display = "none";
+          Z.style.height = "64px";
+          x2 = 0;
+          document.querySelector(".icon .img1").style.display="block"
+          document.querySelector(".icon .img3").style.display="block"
+          document.querySelector(".icon .img2").style.height="2px"
+        }
+      });
+    </script>
+  </body>
+</html>

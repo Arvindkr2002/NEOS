@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+            * {
+              margin: 0%;
+              padding: 0%;
+              box-sizing: border-box;
+            }
+            body {
+              background: linear-gradient(
+                  117.59deg,
+                  rgba(211, 47, 47, 0.5) 0%,
+                  rgba(231, 149, 142, 0.5) 100%
+                ),
+                linear-gradient(
+                  62.41deg,
+                  rgba(255, 245, 0, 0.5) 0%,
+                  rgba(237, 202, 17, 0.5) 100%
+                );
+
+              width: 100%;
+              height: 100vh;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            .logo{
+      position: fixed;
+        left: 5.58%;
+        top: 3%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+            aside img{
+              display:none;
+            }
+            header h1 {
+        position: fixed;
+        left: 14.51%;
+        top: 6%;
+        width: 447px;
+        height: 29px;
+        color: white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.32em;
+      }
+            main img{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+     aspect-ratio: 1.09/1;
+      top: 28.81%;
+      height: 42.28%;
+z-index: 1;
+            }
+            footer h2 {
+        text-transform: uppercase;
+        position: absolute;
+        top: 79.625%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+      }
+            footer img {
+              width: 27px;
+              height: 19px;
+              top: 92.4%;
+              left: 49.1%;
+              position: absolute;
+              z-index: 1;
+            }
+            .vert {
+        position: fixed;
+        left: 12.71%;
+        top: 5.6%;
+        width: 2px;
+        height: 45px;
+      }
+            nav {
+        position: fixed;
+        display: none;
+        background: rgba(255, 255, 255, 0.1);
+        
+        filter: blur(50px);
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        
+      }
+     .nav{
+      left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        position: fixed;
+        display: none;
+        color: white;
+     }
+     .nav1 {
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+        display: none;
+      }
+
+      .nav1 a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        top: 13px;
+        z-index: 99999999;
+        height: 30px;
+        color: white;
+      }
+      .nav1 a:nth-child(1) {
+        left: 2.62%;
+      }
+      .nav1 a:nth-child(2) {
+        left: 20.05%;
+      }
+      .nav1 a:nth-child(3) {
+        left: 40.52%;
+      }
+      
+      .nav a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        top: 13px;
+        color: white;
+        height: 30px;
+      }
+      .nav a:nth-child(1){
+        left: 2.62%;
+      }
+      .nav a:nth-child(2){
+        left: 24.05%;
+      }
+      .nav a:nth-child(3){
+        left: 48.52%;
+      }
+      footer h2{
+        text-align: center;
+      }
+    
+            @media(max-width:480px){
+              .logo{
+        left: 4.5%;
+        top: 3.8%;
+        width: 10%;
+        aspect-ratio: 1;
+     }
+     
+        .vert {
+          left: 16.5%;
+          height: 39px;
+          top: 4%;
+          position: fixed;
+        }
+        header h1{
+          font-size: 20px;
+        line-height: 24px;
+        left: 18.73%;
+        width: 300px;
+        top: 5%;
+        
+      }
+            main img{
+              aspect-ratio: 1.09/1;
+      top: 35.71%;
+      height: 28.28%;
+            }
+            aside img{
+              display: block;
+              position: absolute;
+              top: 10%;
+              width: 100%;
+              height: 90%;
+              left: 0;
+            }
+            footer h2{
+              display: none;
+            }
+            nav {
+        left: 4.8%;
+        top: 7%;
+        height: 28px;
+        width: 81.25%;
+        
+      }
+     .nav{
+      left: 4.8%;
+        top: 7%;
+        height: 28px;
+        width: 81.25%;
+        z-index: 1;
+     }
+      
+      .nav a {
+        font-size: 12px;
+        line-height: 15px;
+        top: 13px;
+        color: white;
+        height: 15px;
+      }
+      .nav a:nth-child(1){
+        left: 6.4%;
+      }
+      .nav a:nth-child(2){
+        left: 29.59%;
+      }
+      .nav a:nth-child(3){
+        left: 50.52%;
+      }
+     
+      .nav1 {
+          left: 4.8%;
+          top: 7%;
+          height: 28px;
+          width: 81.25%;
+          z-index: 1;
+        }
+
+        .nav1 a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav1 a:nth-child(1) {
+          left: 6.4%;
+        }
+        .nav1 a:nth-child(2) {
+          left: 25.59%;
+        }
+        .nav1 a:nth-child(3) {
+          left: 45.52%;
+        }
+        footer a{
+          z-index: 1;
+        }
+        @media(max-width:360px){
+          header h1{
+            font-size: 18px;
+            left: 19%;
+          }
+        }
+     }
+     @media(min-height:1000px){
+      .logo{
+      position: fixed;
+        left: 5.58%;
+        top: 3.5%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+    }
+    </style>
+  </head>
+  <body>
+    <nav> </nav>
+    <div class="nav">    <a href="index.html">HOME</a>
+     <a href="team.html">TEAM</a>
+    
+     <a id="product">PRODUCTS</a></div> 
+     <div class="nav1">
+      <a href="aide.html">AIDE</a>
+      <a href="flow.html">FLOW</a>
+      <a href="link.html">LINK</a>
+    </div>
+    <header>
+    <header>
+      <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+      <img src="Line 44.png" class="vert" alt="" />
+      <h1>NEOS HEALTHTECH</h1>
+    </header>
+    <main>
+      <img src="Group 155.png" alt="" />
+    </main>
+
+    <footer>
+      <h2>Seamless communication platform to improve clinical care</h2>
+      <a href="link_2.html"> <img src="Vectar.png" alt="" /> </a>
+    </footer>
+    <aside>
+      <img src="Group 186.png" alt="" />
+    </aside>
+  </body>
+</html>

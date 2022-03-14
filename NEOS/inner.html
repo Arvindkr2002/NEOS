@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+     
+      #particles-js{
+       position: absolute;
+        height: 2400px;
+        top: 0;
+       bottom: 0;
+       z-index: 0.2;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 95.41%;
+        height: 134px;
+        left: 33px;
+        top: 2.29%;
+        background-color: rgb(73, 73, 73);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        z-index: 3;
+      }
+      nav div {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo img {
+        position: absolute;
+        left: 2.18%;
+        top: 15px;
+        height: 104.25px;
+        width: 8%;
+        margin: auto;
+      }
+      .logo h1 {
+        color: white;
+        position: absolute;
+        width: 447px;
+        height: 29.52px;
+        left: 16.3%;
+
+        top: 52px;
+        bottom: 52.48px;
+
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+      .img1 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        right: 20.66%;
+      }
+      .team {
+        position: absolute;
+        top: 60px;
+        left: 81.58%;
+        height: 14.36px;
+        width: 3.34%;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      .img2 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 87.19%;
+      }
+      .img3 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 64.19%;
+      }
+      .img4 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 72.19%;
+      }
+      .aide,.flow,.link{
+        position: absolute;
+        top: 60px;
+        left: 59%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+
+      .flow{
+        left: 66.6%;
+      }
+      .link{
+        left: 74.5%;
+      }
+      .access {
+        position: absolute;
+        top: 60px;
+        left: 89.44%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      .below {
+        display: none;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+      .heading1 {
+        position: absolute;
+        width: 43.44%;
+        height: 168px;
+        left: 54.5%;
+        top: 320px;
+z-index: 2;
+        font-family: "Montserrat";
+        font-style: bold;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 139.9%;
+      }
+      .content1 {
+        position: absolute;
+        width: 42.4%;
+        height: 255px;
+        left: 54.5%;
+        top: 488px;
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 43px;
+        z-index: 2;
+      }
+      .heading2 {
+        position: absolute;
+        width: 43.44%;
+        height: 168px;
+        left: 4.375%;
+        top: 1112px;
+        z-index: 2;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 139.9%;
+      }
+      .content2 {
+        position: absolute;
+        width: 42.4%;
+        height: 220px;
+        left: 4.375%;
+        top: 1281px;
+        z-index: 2;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 145.1%;
+      }
+      .heading3 {
+        position: absolute;
+        width: 43.44%;
+        height: 168px;
+        left: 54.5%;
+        top: 1819.51px;
+        z-index: 2;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 139.9%;
+      }
+      .content3 {
+        position: absolute;
+        width: 42.4%;
+        height: 220px;
+        left: 54.5%;
+        top: 1988.51px;
+        z-index: 2;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 145.1%;
+      }
+      footer {
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 192px;
+        top: 2384px;
+      }
+      main div img {
+        position: absolute;
+      }
+      .realtime {
+        width: 44.4%;
+        height: 609.51px;
+        left: 6.04%;
+        top: 260px;
+        z-index: 2;
+      }
+      .component2 {
+        width: 45.1%;
+        height: 534px;
+        left: 49.6%;
+        top: 1028px;
+        z-index: 2;
+      }
+      .component3 {
+        width: 45.4%;
+        height: 567px;
+        left: 3.95%;
+        top: 1719.51px;
+        z-index: 2;
+      }
+      a {
+        text-decoration: none;
+      }
+      #icon,
+      #drop {
+        display: none;
+      }
+      @media (max-width: 480px) {
+        nav {
+          width: 91.66%;
+          height: 64px;
+          left: 4.16%;
+          top: 18px;
+        }
+        #particles-js{
+      display: none;
+      }
+        #icon {
+          display: block;
+        }
+        .icon img {
+          position: absolute;
+          width: 8%;
+          height: 2px;
+          left: 85.15%;
+        }
+        .icon .img1 {
+          top: 23px;
+        }
+        .icon .img2 {
+          top: 31px;
+        }
+        .icon .img3 {
+          top: 39px;
+        }
+        .menu {
+          display: none;
+        }
+       
+          .logo img {
+          left: 5.45%;
+          top: 11px;
+          height: 45.65px;
+          width: 50px;
+        
+        }
+        .logo h1 {
+          width: 164px;
+          height: 13px;
+          left: 28.4%;
+          top: 26px;
+
+          font-family: "Montserrat";
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+
+          letter-spacing: 0.32em;
+        }
+        .menu {
+          display: none;
+        }
+        .below {
+          display: block;
+          width: 100%;
+          height: 113px;
+
+          top: 100px;
+
+          background: #d4fafc;
+          position: absolute;
+        }
+        .realtime {
+          width: 71.11%;
+          height: 240.44px;
+          left: 14.44%;
+          top: 140px;
+        }
+        .component2 {
+          width: 71.11%;
+          height: 211.26px;
+          left: 14.44%;
+          top: 583px;
+        }
+        .component3 {
+          width: 71.11%;
+          height: 222.74px;
+          left: 14.44%;
+          top: 968.26px;
+        }
+        .heading1 {
+          width: 84.06%;
+          height: 87px;
+          left: 6.66%;
+          top: 390px;
+
+          font-style: bold;
+          font-weight: 700;
+          font-size: 21px;
+        }
+        .content1 {
+          width: 86.38%;
+          height: 64px;
+          left: 6.66%;
+          top: 466px;
+
+          font-size: 11px;
+          line-height: 14.98px;
+        }
+        .heading2 {
+          width: 84.06%;
+          height: 58px;
+          left: 9.16%;
+          top: 804.26px;
+
+          font-size: 21px;
+          line-height: 139.9%;
+        }
+        .content2 {
+          width: 86.38%;
+          height: 64px;
+          left: 6.94%;
+          top: 874.26px;
+
+          text-align: right;
+          font-size: 11px;
+          line-height: 145.1%;
+        }
+        .heading3 {
+          width: 84.06%;
+          height: 87px;
+          left: 5.83%;
+          top: 1221px;
+
+          font-size: 21px;
+          line-height: 139.9%;
+        }
+        .content3 {
+          width: 86.38%;
+          height: 48px;
+          left: 5.83%;
+          top: 1318px;
+
+          font-size: 11px;
+          line-height: 145.1%;
+        }
+        footer {
+          width: 100%;
+          height: 71px;
+          top: 1401px;
+        }
+        .drop .img1 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 33%;
+          top: 90px;
+        }
+        .drop .img2 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left:54%;
+          top: 90px;
+        }
+        .drop .img3 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 73%;
+          top: 90px;
+        }
+        .drop a {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          position: absolute;
+          width: 15.15%;
+          height: 15px;
+          top: 90px;
+          text-decoration: none;
+          color: white;
+        }
+        .a1 {
+          left: 19%;
+        }
+
+        .a2 {
+          left: 38%;
+        }
+        .a3 {
+          left: 59%;
+        }
+        .a4 {
+          left: 78%;
+        }
+        .arrow {
+          left: 46.11%;
+          top: 777px;
+        }
+        #icon{
+       display: block;
+     }
+        .arrow {
+          left: 46.11%;
+          top: 777px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="logo">
+        <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+
+        <h1>NEOS HEALTHTECH</h1>
+      </div>
+      <div class="menu">
+         
+        <a class="aide" href="aide.html">AIDE</a>
+         <img class="img3" src="Line 2 (1).png" alt="|" />
+         <a class="flow" href="flow.html">FLOW</a>
+         <img class="img4" src="Line 2 (1).png" alt="|" />
+         <a class="link" href="link.html">LINK</a>
+         <img class="img1" src="Line 2 (1).png" alt="|" />
+         <a class="team" href="#">TEAM</a>
+         <img class="img2" src="Line 2 (1).png" alt="|" />
+         <a class="access" href="#">GET ACCESS</a>
+       </div>
+      <div class="icon" id="icon">
+        <img class="img1" src="Rectangle 83.png" alt="" />
+        <img class="img2" src="Rectangle 83.png" alt="" />
+        <img class="img3" src="Rectangle 83.png" alt="" />
+      </div>
+      <div class="drop" id="drop">
+        <a class="a1" href="aide.html">AIDE</a>
+        <img class="img1" src="Line 2 (1).png" alt="" />
+        <a class="a2" href="flow.html">FLOW</a>
+        <img class="img2" src="Line 2 (1).png" alt="" />
+        <a class="a3" href="link.html">LINK</a>
+        <img class="img3" src="Line 2 (1).png" alt="" />
+        <a class="a4" href="team.html">TEAM</a>
+      </div>
+    </nav>
+
+   
+    <main>
+      <div>
+        <img src="Component 1.png" alt="" class="realtime" />
+      </div>
+      <div>
+        <div id="heading" class="heading1">
+          Realtime radiology assitance with artificial intelligence.
+        </div>
+        <div class="content1">
+          Neos uses machine learning models to understand the unique patterns
+          within a scan, provides differential quantification and structured
+          reporting to minimise turn around time per scan.
+          <a href="aide.html"><b style="color: #00695c">Learn More. </b></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="heading2">
+          Personalised data backed insights of the radiologists.
+        </div>
+        <div class="content2">
+          Neos notes and analyzes important metrics of the radiologist to better
+          triage the scans. This helps reallocation and reassigning of the scans
+          to give new meaning to teleradiology.
+          <a href="flow.html"><b style="color: #00695c">Learn More. </b></a>
+        </div>
+      </div>
+      <div>
+        <img src="Component 2 (1).png" alt="" class="component2" />
+      </div>
+      <div>
+        <div>
+          <img src="Component 3.png" alt="" class="component3" />
+        </div>
+        <div class="heading3">
+          Instant communication of critical information to the doctor.
+        </div>
+        <div class="content3">
+          Neos instaneously communicates the radiologists’ findings to the
+          consulting doctor through a robust communication channel to improve
+          the quality of diagnosis.
+          <a href="link.html"><b style="color: #00695c">Learn More. </b></a>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <div id="particles-js"></div>
+
+    <script>
+      let ans = 0;
+      window.addEventListener("scroll", function () {
+        let scrollable =
+          document.documentElement.scrollHeight - window.innerHeight;
+        let scrolled = window.scrollY;
+        console.log(scrolled);
+        if (Math.ceil(scrolled) == 0) {
+          ans++;
+        }
+        if (ans == 1) {
+          ans = 0;
+          window.open("index.html", "_self");
+        }
+      });
+      let x1 = 0;
+      let x = document.getElementById("icon");
+      let y = document.getElementById("drop");
+      let z = document.getElementById("nav");
+      x.addEventListener("click", function () {
+        if (x1 == 0) {
+          y.style.display = "block";
+          z.style.height = "150px";
+          z.style.zIndex = "5";
+          document.querySelector(".icon .img1").style.display="none"
+          document.querySelector(".icon .img3").style.display="none"
+          document.querySelector(".icon .img2").style.height="3px"
+          x1 = 1;
+
+        } else {
+          y.style.display = "none";
+          z.style.height = "64px";
+          x1 = 0;
+          document.querySelector(".icon .img1").style.display="block"
+          document.querySelector(".icon .img3").style.display="block"
+          document.querySelector(".icon .img2").style.height="2px"
+        }
+      });
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  </body>
+</html>

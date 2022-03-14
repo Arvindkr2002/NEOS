@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Montserrat";
+      }
+      .logo{
+      position: absolute;
+        left: 5.58%;
+        top: 3%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+     
+      body {
+        background: linear-gradient(
+            117.59deg,
+            rgba(211, 47, 47, 0.5) 0%,
+            rgba(231, 149, 142, 0.5) 100%
+          ),
+          linear-gradient(
+            62.41deg,
+            rgba(255, 245, 0, 0.5) 0%,
+            rgba(237, 202, 17, 0.5) 100%
+          );
+
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      header h1 {
+        position: absolute;
+        left: 6.11%;
+        top: 8.93%;
+        width: 447px;
+        height: 29px;
+        color: white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        z-index: 1;
+        letter-spacing: 0.32em;
+      }
+      main h2 {
+        position: absolute;
+        width: 53.2%;
+        height: 22.7%;
+        left: 4.79%;
+        top: 22.7%;
+        color: white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 100%;
+        z-index: 1;
+      }
+
+      main p {
+        position: absolute;
+        width: 49.4%;
+        height: 15.85%;
+        left: 4.16%;
+        top: 51.03%;
+        color: white;
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 120%;
+        z-index: 1;
+      }
+      main .img1 {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        height: 100%;
+      }
+      main img {
+        z-index: 0.5;
+      }
+      main .img2 {
+        position: absolute;
+        width: 64%;
+        height: 32.6%;
+        left: 31.5%;
+        top: 15.5%;
+      }
+      main .img3 {
+        position: absolute;
+        width: 20.4%;
+        height: 44.7%;
+        left: 34.6%;
+        top: 55.1%;
+      }
+      footer {
+        width: 100%;
+        height: 7.68%;
+        top: 92.4%;
+        left: 0;
+        position: absolute;
+        background: rgba(18, 18, 18, 0.7);
+      
+      }
+      .vert {
+        position: absolute;
+        left: 12.71%;
+        top: 5.6%;
+        width: 2px;
+        height: 45px;
+      }
+      aside img {
+        position: absolute;
+        left: 63.29%;
+        top: 13.54%;
+        width: 25%;
+        height: 78.39%;
+      }
+      nav {
+        position: fixed;
+        display: none;
+        background: rgba(255, 255, 255, 0.1);
+        
+        filter: blur(50px);
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        
+      }
+      .nav {
+        left: 14%;
+        top: 5.76%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+      }
+      .nav1 {
+        left: 14%;
+        top: 5.76%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+        display: none;
+      }
+
+      .nav a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        top: 13px;
+        z-index: 99999999;
+        height: 30px;
+        color: white;
+      }
+      .nav a:nth-child(1) {
+        left: 1.62%;
+      }
+      .nav a:nth-child(2) {
+        left: 19.05%;
+      }
+      .nav a:nth-child(3) {
+        left: 36.52%;
+      }
+      .nav a:nth-child(4) {
+        left: 52.52%;
+      }
+      
+      
+aside .form{
+  display: none;
+}
+aside .form1{
+  display: none;
+}
+form {
+        position: absolute;
+        width: 18.5%;
+        height: 57.5%;
+        bottom: 22.9%;
+        right: 16%;
+        border-radius: 5%;
+        z-index: 2;
+        background-color: white;
+      }
+      form input {
+        position: absolute;
+        border: none;
+        outline: none;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        left: 11%;
+        color: white;
+        top: 43%;
+        width: 70%;
+      }
+      form .img1{
+          position: absolute;
+         aspect-ratio: 1.09/1;
+         left: 50%;
+         transform: translateX(-50%);
+       height: 15%;
+       top: 5.8%;
+        }
+     form h2{
+          position: absolute;
+left: 16.5%;
+width: 66%;
+top: 25%;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+color: black;}
+form img{
+  position: absolute;
+}
+form .input1{
+  top: 50%;
+}
+form .input2{
+  top: 60%;
+}
+form .input3{
+  top: 70%;
+}
+form .input4{
+  top: 80%;
+}
+form .input5{
+  top: 90%;
+
+}
+form .inp1{
+  top: 53%;
+  width: 85%;
+  left: 10%;
+}
+form .inp2{
+  top: 63%;
+  width: 85%;
+  left: 10%;
+}
+form .inp3{
+  top: 73%;
+  width: 85%;
+  left: 10%;
+}
+form .inp4{
+  top: 83%;
+  width: 85%;
+  left: 10%;
+}
+form .inp5{
+  top: 93%;
+  width: 85%;
+  left: 10%;
+}
+.enter{
+  position: absolute;
+  z-index: 2;
+  width: 9%;
+  height: 6%;
+  background-color: #00695c;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: 'Mont-Serrat';
+  text-transform: uppercase;
+  border-radius: 5%;
+  top: 78.5%;
+  left: 71%;
+}
+.enter:hover{
+  cursor: pointer;
+}
+.enter1{
+  z-index: 5;
+}
+
+      @media (max-width: 480px) {
+        body{
+          height: 150vh;
+        }
+        aside>img {
+          display: none;
+        }
+        .enter{
+          display: none;
+        }
+form{
+  display: none;
+}
+     .logo{
+        left: 5.58%;
+        top: 4%;
+        width: 10%;
+        aspect-ratio: 1;
+     }
+     
+        .vert {
+          left: 18.5%;
+          height: 39px;
+          top: 4%;
+          position: absolute;
+        }
+        header h1 {
+          font-size: 20px;
+          line-height: 24px;
+          left: 10.23%;
+          width: 82.77%;
+          top: 6.7%;
+        }
+        footer {
+          bottom: 0px;
+          height: 8.41%;
+          position: fixed;
+          background-color: rgb(58, 58, 58);
+          z-index: 4;
+        }
+        main h2 {
+          font-size: 30px;
+          left: 6.15%;
+          width: 87.5%;
+          height: 13.15%;
+          top: 11.7%;
+        }
+        main p {
+          font-size: 20px;
+          left: 6.15%;
+          width: 87.5%;
+          height: 13.15%;
+          top: 23.89%;
+        }
+        nav {
+          left: 14%;
+        top: 5.76%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+        }
+        nav {
+          left: 14.8%;
+          top: 5%;
+          height: 28px;
+          width: 81.25%;
+        }
+        .nav {
+          left: 14.8%;
+          top: 4%;
+          height: 28px;
+          width: 81.25%;
+        }
+
+        .nav a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav a:nth-child(1) {
+          left: 7.4%;
+        }
+        .nav a:nth-child(2) {
+          left: 29.59%;
+        }
+        .nav a:nth-child(3) {
+          left: 50.52%;
+        }
+        .nav a:nth-child(4) {
+          left: 72.52%;
+        }
+        .nav1 {
+          left: 4.8%;
+          top: 5.5%;
+          height: 28px;
+          width: 81.25%;
+          z-index: 1;
+        }
+
+        .nav1 a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav1 a:nth-child(1) {
+          left: 6.4%;
+        }
+        .nav1 a:nth-child(2) {
+          left: 25.59%;
+        }
+        .nav1 a:nth-child(3) {
+          left: 45.52%;
+        }
+        aside .form{
+          display: block;
+          position: absolute;
+          z-index: 4;
+          width: 90%;
+          left: 5%;
+          top: 53%;
+          height: 90%;
+          background-color: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
+          mix-blend-mode: overlay;
+border-radius: 10px;
+        }
+        aside .form1{
+          display: block;
+          position: absolute;
+          z-index: 4;
+          width: 90%;
+          left: 5%;
+          top: 53%;
+          height: 90%;
+border-radius: 10px;
+        }
+        .form1 .img{
+  position: absolute;
+  aspect-ratio: 10/1;
+}
+.form1 .input1{
+  top: 43%;
+}
+.form1 .input2{
+  top: 53%;
+}
+.form1 .input3{
+  top: 63%;
+}
+.form1 .input4{
+  top: 73%;
+}
+.form1 .input5{
+  top: 83%;
+
+}
+.form1 .inp1{
+  top: 47%;
+  width: 80%;
+  left: 13%;
+  height: 1px;
+}
+.form1 .inp2{
+  top: 57%;
+  width: 80%;
+  left: 13%;
+  height: 1px;
+}
+.form1 .inp3{
+  top: 67%;
+  width: 80%;
+  left: 13%;
+  height: 1px;
+}
+.form1 .inp4{
+  top: 77%;
+  width: 80%;
+  left: 13%;
+  height: 1px;
+}
+.form1 .inp5{
+  top: 87%;
+  width: 80%;
+  left: 13%;
+  height: 1px;
+}
+        aside .form1 .img1{
+          position: absolute;
+         aspect-ratio: 1/1;
+         left: 50%;
+         transform: translateX(-50%);
+       height: 15%;
+         
+         top: 5.8%;
+        }
+        aside .form1 h2{
+          position: absolute;
+left: 16.5%;
+width: 66%;
+top: 30%;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+color: black;
+        }
+        aside .form1 input{
+          position: absolute;
+          border: none;
+          background-color: rgba(255, 255, 255,0);
+          outline: none;
+          left: 50%;
+          transform: translate(-50%);
+          top: 91%;
+          font-size: 20px;
+          font-weight: bold;
+        }
+aside .form1 .img2{
+  width: 80%;
+  left: 15%;
+  height: 1px;
+  top: 83%;
+}
+main h2{
+  top: 14%;
+}
+main p{
+  top: 26.5%;
+}
+aside .form1 .enter1{
+  position: absolute;
+  background-color: green;
+  width: 30%;
+  height: 6%;
+  border: none;
+  outline: none;
+  font-family: 'Mont-Serrat';
+  text-transform: uppercase;
+  border-radius: 5%;
+  color: white;
+}
+main .img1 {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        height: 100%;
+      }
+      main .img2 {
+        position: absolute;
+        width: 64%;
+        height: 32.6%;
+        left: 31.5%;
+        top: 15.5%;
+      }
+      main .img3 {
+        position: absolute;
+        width: 20.4%;
+        height: 44.7%;
+        left: 34.6%;
+        top: 55.1%;
+      }
+@media(max-height:843px){
+  aside .form{
+    top: 51%;
+  }
+  aside .form1{
+    top: 51%;
+  }
+  aside .form1 .img1{
+    top: 4%;
+  }
+  aside .form1 h2{
+    top: 27%;
+  }
+  main h2{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  main p{
+    font-size: 16px;
+    line-height: 20px;
+    top: 28%;
+  }
+ 
+ 
+}
+      }
+      @media(min-height:1000px){
+      .logo{
+      position: fixed;
+        left: 5.58%;
+        top: 3.5%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+     main p{
+       top: 48%;
+     }
+     form{
+       width: 23%;
+       left: 66%;
+       height: 53%;
+       bottom:28% ;
+     }
+     aside img{
+       width: 30%;
+       height: 72.5%;
+     
+     }
+     .enter{
+       left: 72.8%;
+       width: 11%;
+       top: 73.5%;
+     }
+    }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="team.html">TEAM</a>
+      <a href="aide.html">AIDE</a>
+      <a href="flow.html">FLOW</a>
+    </div>
+    
+    <header> 
+       <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+      <img src="Line 44.png" class="vert" alt="" />
+    </header>
+    <main>
+      <h2>Are you a doctor who works closely with scans?</h2>
+      <br /><br />
+      <p>
+        We are building a communication channel between two critical components,
+        the radiologist and the referring physician. This robust channel will
+        allow seamless flow of important information and ensure quality
+        treatment to the patient.
+      </p>
+      <img class="img1" src="Vector 30 (1).png" alt="" />
+      <img class="img2" src="Vector 32.png" alt="" />
+      <img class="img3" src="Vector 31.png" alt="" />
+    </main>
+
+    <aside>
+      <img src="Group 156.png" alt="" />
+      <div class="form">
+      </div>
+      <div class="form1">
+        <img class="img1" src="linklogo.png" alt="">
+        <h2>Get in touch for access</h2>
+          <input type="text" class="input1" placeholder="NAME" id="name">
+          <input type="text" class="input2" placeholder="SPECIALITY" id="field">
+          <input type="text" class="input3" placeholder="CITY" id="city">
+          <input type="phone" class="input4" placeholder="PHONE" id="number">
+          <input type="email" class="input5" placeholder="EMAIL" id="email">
+          <img src="Line 48 (Stroke).png" class="inp1" alt="">
+          <img src="Line 48 (Stroke).png" class="inp2" alt="">
+          <img src="Line 48 (Stroke).png" class="inp3" alt="">
+          <img src="Line 48 (Stroke).png" class="inp4" alt="">
+          <img src="Line 48 (Stroke).png" class="inp5" alt="">
+          <input class="enter1" type="submit" id="join" value="ENTER" style="font-family: Montserrat;">
+         
+      
+      </div>
+    </aside>
+    <form>
+      <img class="img1" src="linklogo.png" alt="">
+      <h2>Get in touch for access</h2>
+      <input type="text" class="input1" placeholder="NAME" id="name1">
+      <input type="text" class="input2" placeholder="SPECIALITY" id="field1">
+      <input type="text" class="input3" placeholder="CITY" id="city1">
+      <input type="phone" class="input4" placeholder="PHONE" id="number1">
+      <input type="email" class="input5" placeholder="EMAIL" id="email1">
+      <img src="Line 48 (Stroke).png" class="inp1" alt="">
+      <img src="Line 48 (Stroke).png" class="inp2" alt="">
+      <img src="Line 48 (Stroke).png" class="inp3" alt="">
+      <img src="Line 48 (Stroke).png" class="inp4" alt="">
+      <img src="Line 48 (Stroke).png" class="inp5" alt="">
+    </form>
+  <button class="enter" style="font-family: Montserrat;" id="join1">ENTER</button>
+
+    <footer></footer>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        document.getElementById("join").addEventListener("click", function () {
+         
+          let p=document.getElementById("name");
+          let q=document.getElementById("field");
+          let r=document.getElementById("city");
+          let s=document.getElementById("email");
+          let t=document.getElementById("number");
+          let mes ="name:" + p.value + "\n speciality:" + q.value + "\n city:" + r.value + "\n phone:" + s.value+"\n email:" + t.value;
+          let sub = p.value;
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "neoshealthtech@gmail.com",
+           Password: "rmllhjiiwvfimduc",
+            To: "me20b038@smail.iitm.ac.in",
+            From: "neoshealthtech@gmail.com",
+            Subject: sub,
+            Body: mes,
+          }).then(function (message) {
+            if (message == "OK") alert("Our team would contact you shortly");
+            else alert("error! please try again later");
+          });
+        });
+      </script>
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
+       <script>
+         document.getElementById("join1").addEventListener("click", function () {
+          
+           let p=document.getElementById("name1");
+           let q=document.getElementById("field1");
+           let r=document.getElementById("city1");
+           let s=document.getElementById("email1");
+           let t=document.getElementById("number1");
+           let mes ="name:" + p.value + "\t speciality:" + q.value + "\t city:" + r.value + "\t email:" + s.value+"\t phone:" + t.value;
+           console.log(p.value)
+           let sub = p.value;
+           Email.send({
+             Host: "smtp.gmail.com",
+             Username: "neoshealthtech@gmail.com",
+             Password: "rmllhjiiwvfimduc",
+             To: "me20b038@smail.iitm.ac.in",
+             From: "neoshealthtech@gmail.com",
+             Subject: sub,
+             Body: mes,
+           }).then(function (message) {
+             if (message == "OK") alert("Our team would contact you shortly1");
+             else alert("error pls try again later");
+           });
+         });
+       </script>
+  </body>
+</html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        color: white;
+      }
+      body {
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow-y: hidden;
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),
+          linear-gradient(
+            52.05deg,
+            rgba(0, 0, 0, 0.5) 50.29%,
+            rgba(211, 106, 47, 0.5) 99.55%
+          ),
+          linear-gradient(
+            232.89deg,
+            rgba(0, 0, 0, 0.5) 44.72%,
+            rgba(255, 0, 0, 0.5) 107.22%
+          ),
+          linear-gradient(
+            118.03deg,
+            rgba(18, 18, 18, 0) 61.68%,
+            rgba(211, 181, 105, 0.275) 95.25%
+          ),
+          linear-gradient(110.1deg, rgba(18, 18, 18, 0) 45.54%, #e90000 71.73%);
+      }
+     .logo{
+      position: absolute;
+        left: 5.58%;
+        top: 3%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+     
+      header h2 {
+        position: absolute;
+        left: 86.25%;
+        top: 5.76%;
+        height: 3.17%;
+        width: 10.2%;
+        font-weight: 600;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+      }
+      aside .line {
+        display: none;
+        width: 68.05%;
+        position: absolute;
+        top: 65.23%;
+        left: 7%;
+        height: 1px;
+      }
+      main p {
+        position: absolute;
+        width: 413px;
+        height: 13px;
+        left: 4.79%;
+        top: 90.2%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+      }
+      footer {
+        width: 100%;
+        position: absolute;
+        height: 7.68%;
+        top: 92.31%;
+        background: rgba(18, 18, 18, 0.7);
+      }
+      header div {
+        position: absolute;
+        text-align: center;
+        width: 141px;
+        height: 50px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        top: 11.2%;
+      }
+      header div p {
+        position: absolute;
+        top: 32%;
+      }
+      .div1 p {
+        left: 19.86%;
+      }
+      .div2 p {
+        left: 5%;
+        opacity: 0.5;
+      }
+      .div3 p {
+        left: 5%;
+        top: 18%;
+        opacity: 0.5;
+      }
+      .div1 {
+        left: 65%;
+      }
+      .div2 {
+        left: 76.18%;
+      }
+      .div3 {
+        left: 87.36%;
+      }
+      header div:hover {
+        cursor: pointer;
+      }
+      .vert {
+        position: absolute;
+        left: 12.71%;
+        top: 5.6%;
+        width: 2px;
+        height: 45px;
+      }
+      main div {
+        position: absolute;
+        text-align: right;
+        left: 72.64%;
+        height: 20.17%;
+        top: 20.17%;
+        width: 24.5%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      #quant {
+        display: none;
+      }
+      #struct {
+        display: none;
+      }
+      aside img {
+        position: absolute;
+        top: 14.67%;
+        left: 1%;
+        height: 73.27%;
+
+        aspect-ratio: 1.1/0.81;
+      }
+      #Quant {
+        display: none;
+      }
+      #Struct {
+        display: none;
+      }
+      #Quants {
+        display: none;
+      }
+      #Structs {
+        display: none;
+      }
+      #Dets {
+        display: none;
+      }
+      .left,
+      .right {
+        display: none;
+      }
+      nav {
+        position: absolute;
+        display: none;
+        background: rgba(255, 255, 255, 0.1);
+
+        filter: blur(50px);
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+      }
+      .nav {
+        left: 14%;
+        top: 5.76%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+      }
+      .nav1 {
+        left: 14%;
+        top: 5.76%;
+        height: 55px;
+        width: 46.875%;
+        position: absolute;
+        display: none;
+      }
+
+      .nav a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        top: 13px;
+        z-index: 99999999;
+        height: 30px;
+      }
+      .nav a:nth-child(1) {
+        left: 1.62%;
+      }
+      .nav a:nth-child(2) {
+        left: 19.05%;
+      }
+      .nav a:nth-child(3) {
+        left: 35.52%;
+      }
+      
+      .nav1 a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        top: 13px;
+        z-index: 99999999;
+        height: 30px;
+      }
+      .nav1 a:nth-child(1) {
+        left: 2.62%;
+      }
+      .nav1 a:nth-child(2) {
+        left: 21.05%;
+      }
+      .nav1 a:nth-child(3) {
+        left: 40.52%;
+      }
+      .nav a:nth-child(4) {
+        left: 53.1%;
+      }
+      .Ddot,
+      .Qdot,
+      .Sdot {
+        display: none;
+      }
+      #product:hover{
+        cursor: pointer;
+      }
+      @media (max-width: 480px) {
+        aside .line {
+          display: block;
+        }
+        .logo{
+        left: 5.58%;
+        top: 4%;
+        width: 10%;
+        aspect-ratio: 1;
+     }
+     
+        .vert {
+          left: 18.5%;
+          height: 39px;
+          top: 4%;
+          position: absolute;
+        }
+        header h1 {
+          position: absolute;
+          font-size: 20px;
+          line-height: 24px;
+          left: 9.2%;
+          width: 90%;
+          top: 6.8%;
+        }
+        #div1 p,
+        #div3 p,
+        #div2 p {
+          opacity: 1;
+          left: 0;
+          top: 0;
+        }
+        #div1 p{
+          top: -50%;
+        }
+        #div1,
+        #div3,
+        #div2 {
+          background-color: rgba(0, 0, 0, 0);
+
+          left: 7%;
+          top: 61.33%;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          width: 34.3%;
+          position: absolute;
+        }
+        #div3 {
+          width: 76.7%;
+        }
+        #div3,
+        #div2 {
+          display: none;
+        }
+  
+        aside #Dets,
+        aside #Quants,
+        aside #Structs {
+          position: absolute;
+          display: block;
+          top: 20.5%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 31%;
+        }
+        aside #Dets {
+         aspect-ratio: 1.21/0.81;
+         height: 30%;
+          top: 20%;
+        }
+        aside #Structs,
+        aside #Quants {
+          aspect-ratio: 308/282;
+        }
+        #Quant,
+        #Det,
+        #Struct {
+          display: none;
+        }
+        aside #Quants,
+        aside #Structs,
+        #quant,
+        #struct {
+          display: none;
+        }
+
+        #det,
+        #quant,
+        #struct {
+          top: 63.14%;
+          left: 7%;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: left;
+          width: 90%;
+          height: 15%;
+        }
+        #struct,#quant{
+          top: 67.14%;
+        }
+        footer {
+          width: 100%;
+          height: 5%;
+          top: 95%;
+        }
+
+        main p {
+          display: none;
+        }
+        header h2 {
+          display: none;
+        }
+        .left {
+          position: absolute;
+          left: 7%;
+          top: 88%;
+          border: none;
+          width: 22px;
+          height: 22px;
+          transform: rotate(180deg);
+        }
+        .right {
+          display: block;
+          position: absolute;
+          right: 7%;
+          width: 22px;
+          height: 22px;
+          top: 88%;
+        }
+        nav {
+          left: 16%;
+          top: 5%;
+          height: 28px;
+          width: 81.25%;
+        }
+        .nav {
+          left: 16%;
+          top: 4%;
+          height: 28px;
+          width: 81.25%;
+        }
+
+        .nav a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav a:nth-child(1) {
+          left: 7.4%;
+        }
+        .nav a:nth-child(2) {
+          left: 29.59%;
+        }
+        .nav a:nth-child(3) {
+          left: 50.52%;
+        }
+        .nav a:nth-child(4) {
+          left: 72.52%;
+        }
+        .nav1 {
+          left: 4.8%;
+          top: 5.5%;
+          height: 28px;
+          width: 81.25%;
+        }
+
+        .nav1 a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav1 a:nth-child(1) {
+          left: 6.4%;
+        }
+        .nav1 a:nth-child(2) {
+          left: 25.59%;
+        }
+        .nav1 a:nth-child(3) {
+          left: 45.52%;
+        }
+        .Ddot,
+        .Sdot,
+        .Qdot {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 88%;
+          display: block;
+        }
+        .Ddot {
+          left: 35%;
+        }
+        .Qdot {
+          left: 45%;
+        }
+        .Sdot {
+          left: 55%;
+        }
+        #div1 p{
+          top: -50%;
+        }
+        @media (max-height: 843px) {
+          .arrowr,
+          .arrowl,
+          .Qdot,
+          .Ddot,
+          .Sdot {
+            top: 89%;
+          }
+          #div1{
+      top: 53%;
+    }
+    #det{
+          top: 58%;
+        }
+        #div2{
+      top: 60%;
+    }
+    #quant{
+          top: 65%;
+        }
+
+        }
+      }
+      @media (max-height: 740px){
+#div1 p{
+  top: 0;
+}}
+@media (max-height: 675px){
+#div1 p,#div2 p,#div3 p{
+  top: -35%;
+}
+aside #Dets{
+  height: 35%;
+  top: 13%;
+}
+#det{
+  top: 55%;
+}
+#quant{
+  top: 63%;
+}
+#struct{
+  top: 65%;
+}
+      }
+      @media(max-height:950px){
+aside img{
+  left: 35%;
+  transform: translateX(-50%);
+}}
+@media(min-height:1000px){
+      .logo{
+      position: fixed;
+        left: 5.58%;
+        top: 3.5%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+    }
+      
+     
+      
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="team.html">TEAM</a>
+      <a href="flow.html">FLOW</a>
+      <a href="link.html">LINK</a>
+    </div>
+    
+    <header>
+     <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+      <img src="Line 44.png" class="vert" alt="" />
+    
+      <h2>FEATURES</h2>
+
+      <div class="div1" id="div1">
+        <p>DETECTION</p>
+      </div>
+      <div class="div2" id="div2">
+        <p>QUANTIFICATION</p>
+      </div>
+      <div class="div3" id="div3">
+        <p>STRUCTURED REPORTING</p>
+      </div>
+    </header>
+    <main>
+      <div id="det">
+        AIDE acts as an assistive diagnostic tool for radiologists. AIDE accurately detects and highlights suspected lesions in a scan. AIDE detects multiple abnormalities in a Chest-CT such as Ground-glass opacities, Consolidation, Crazy paving pattern, Fibrosis, and Nodules in less than 5 minutes.
+      </div>
+      <div id="quant">
+        AIDE quantifies the severity of the condition based on the volume of the lung parenchyma and infected lesions. AIDE also assigns a severity score which can be further used to monitor the progression of the patient.
+      </div>
+      <div id="struct">
+        AIDE provides an assistive reporting tool with a preliminary report and structured reporting proformas that allow the radiologist to report with ease while diagnosing the patient
+      </div>
+    </main>
+
+    <aside>
+      <img id="Det" src="AIDE De_mac.png" alt="" />
+      <img id="Struct" src="AIDE Sr_mac.png" alt="" />
+      <img id="Quant" src="AIDE Qu_mac.png" alt="" />
+      <img id="Dets" src="AIDE detection MV (1).png" alt="" />
+      <img id="Quants" src="Component 18.png" alt="" />
+      <img id="Structs" src="Group 110.png" alt="" />
+      
+    </aside>
+    <img src="Polygon 2.png" alt="" class="left" />
+    <img src="Polygon 2.png" alt="" class="right" />
+    <img src="Ellipse 11.png" alt="" class="Ddot" />
+    <img src="Ellipse 16.png" alt="" class="Qdot" />
+    <img src="Ellipse 16.png" alt="" class="Sdot" />
+    <footer></footer>
+
+    <script>
+      x = document.getElementById("div1");
+      y = document.getElementById("div2");
+      z = document.getElementById("div3");
+      a = document.getElementById("det");
+      b = document.getElementById("quant");
+      c = document.getElementById("struct");
+      a1 = document.getElementById("Det");
+      b1 = document.getElementById("Quant");
+      c1 = document.getElementById("Struct");
+      a1s = document.getElementById("Dets");
+      b1s = document.getElementById("Quants");
+      c1s = document.getElementById("Structs");
+      ddot = document.querySelector(".Ddot");
+      qdot = document.querySelector(".Qdot");
+      sdot = document.querySelector(".Sdot");
+      l = document.querySelector(".left");
+      r = document.querySelector(".right");
+      x.addEventListener("click", function () {
+        document.querySelector(".div1 p").style.opacity = 1;
+        document.querySelector(".div2 p").style.opacity = 0.5;
+        document.querySelector(".div3 p").style.opacity = 0.5;
+        a.style.display = "block";
+        b.style.display = "none";
+        c.style.display = "none";
+        a1.style.display = "block";
+        b1.style.display = "none";
+        c1.style.display = "none";
+      });
+      y.addEventListener("click", function () {
+        document.querySelector(".div2 p").style.opacity = 1;
+        document.querySelector(".div1 p").style.opacity = 0.5;
+        document.querySelector(".div3 p").style.opacity = 0.5;
+
+        b.style.display = "block";
+        a.style.display = "none";
+        c.style.display = "none";
+        b1.style.display = "block";
+        a1.style.display = "none";
+        c1.style.display = "none";
+      });
+      z.addEventListener("click", function () {
+        document.querySelector(".div3 p").style.opacity = 1;
+        document.querySelector(".div2 p").style.opacity = 0.5;
+        document.querySelector(".div1 p").style.opacity = 0.5;
+
+        c.style.display = "block";
+        b.style.display = "none";
+        a.style.display = "none";
+        c1.style.display = "block";
+        b1.style.display = "none";
+        a1.style.display = "none";
+        document.querySelector("nav").style.display = "block";
+          document.querySelector(".nav").style.display = "block";
+          document.querySelector("header h1").style.display = "none";
+      });
+      let x1 = 1;
+
+      r.addEventListener("click", function () {
+        document.querySelector(".div3 p").style.opacity = 1;
+        document.querySelector(".div2 p").style.opacity = 1;
+        document.querySelector(".div1 p").style.opacity = 1;
+        if (x1 == 1) {
+          x.style.display = "none";
+          z.style.display = "none";
+          y.style.display = "block";
+          b.style.display = "block";
+          a.style.display = "none";
+          c.style.display = "none";
+          b1s.style.display = "block";
+          a1s.style.display = "none";
+          c1s.style.display = "none";
+          x1 = 2;
+          l.style.display = "block";
+          ddot.setAttribute("src", "Ellipse 16.png");
+          qdot.setAttribute("src", "Ellipse 11.png");
+        } else if (x1 == 2) {
+          x.style.display = "none";
+          z.style.display = "block";
+          y.style.display = "none";
+          c.style.display = "block";
+          b.style.display = "none";
+          a.style.display = "none";
+          c1s.style.display = "block";
+          b1s.style.display = "none";
+          a1s.style.display = "none";
+          x1 = 3;
+          r.style.display = "none";
+          qdot.setAttribute("src", "Ellipse 16.png");
+          sdot.setAttribute("src", "Ellipse 11.png");
+          document.querySelector("nav").style.display = "block";
+        document.querySelector(".nav").style.display = "block";
+        }
+      });
+      l.addEventListener("click", function () {
+        document.querySelector(".div3 p").style.opacity = 1;
+        document.querySelector(".div2 p").style.opacity = 1;
+        document.querySelector(".div1 p").style.opacity = 1;
+        if (x1 == 3) {
+          x.style.display = "none";
+          z.style.display = "none";
+          y.style.display = "block";
+          b.style.display = "block";
+          a.style.display = "none";
+          c.style.display = "none";
+          b1s.style.display = "block";
+          a1s.style.display = "none";
+          c1s.style.display = "none";
+          x1 = 2;
+          r.style.display = "block";
+          sdot.setAttribute("src", "Ellipse 16.png");
+          qdot.setAttribute("src", "Ellipse 11.png");
+        } else if (x1 == 2) {
+          x.style.display = "block";
+          z.style.display = "none";
+          y.style.display = "none";
+          a.style.display = "block";
+          b.style.display = "none";
+          c.style.display = "none";
+          a1s.style.display = "block";
+          b1s.style.display = "none";
+          c1s.style.display = "none";
+          x1 = 1;
+          l.style.display = "none";
+          qdot.setAttribute("src", "Ellipse 16.png");
+          ddot.setAttribute("src", "Ellipse 11.png");
+        }
+      });
+
+    
+    </script>
+  </body>
+</html>

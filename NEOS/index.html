@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body{
+        width: 100%;
+        height: 100vh;
+      }
+      .backimg {
+        position: absolute;
+        z-index: 0.5;
+        width: 100%;
+        height: 101vh;
+      }
+      .background {
+        position: relative;
+        z-index: 0.8;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 95.41%;
+        height: 134px;
+        left: 33px;
+        top: 2.29%;
+        background-color: rgb(73, 73, 73);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        z-index: 2;
+
+      }
+      .icon {
+        display: none;
+      }
+
+      nav div {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo img {
+        position: absolute;
+        left: 2.18%;
+        top: 15px;
+        height: 104.25px;
+        width: 8%;
+        margin: auto;
+      }
+      .logo h1 {
+        color: white;
+        position: absolute;
+        width: 447px;
+        height: 29.52px;
+        left: 16.3%;
+        top: 52px;
+        bottom: 52.48px;
+
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+      .img1 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        right: 20.66%;
+      }
+      .team {
+        position: absolute;
+        top: 60px;
+        left: 81.58%;
+        height: 14.36px;
+        width: 3.34%;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      .img2 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 87.19%;
+      }
+      .img3 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 64.19%;
+      }
+      .img4 {
+        height: 32.07px;
+        position: absolute;
+        top: 50.93px;
+        left: 72.19%;
+      }
+      .aide,.flow,.link{
+        position: absolute;
+        top: 60px;
+        left: 59%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+
+      .flow{
+        left: 66.6%;
+      }
+      .link{
+        left: 74.5%;
+      }
+      .access {
+        position: absolute;
+        top: 60px;
+        left: 89.44%;
+        height: 14.36px;
+        width: 98px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+      }
+      .heading {
+        position: absolute;
+        top: 232px;
+        left: 9.02%;
+        font-size: 60px;
+        font-family: 'Montserrat';
+        font-weight: normal;
+        width: 40.9%;
+        height: 224px;
+        line-height: 73.14px;
+        color: white;
+      }
+      .content {
+        position: absolute;
+        top: 487px;
+        left: 9.02%;
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 300;
+        width: 37.29%;
+        height: 99px;
+        line-height: 33px;
+        color: white;
+      }
+      main {
+        display: flex;
+      }
+
+      main div img {
+        position: absolute;
+        left: 48.7%;
+        top: 176.14px;
+        height: 555.43px;
+        width: 43.52%;
+      }
+    
+      footer {
+        position: absolute;
+        background-color: white;
+        width: 32.98%;
+        height: 59px;
+        left: 33.5%;
+        top: 670px;
+        display: flex;
+      }
+      footer p {
+        position: absolute;
+        width: 32%;
+        height: 29px;
+        left: 6.52%;
+        top: 15px;
+        padding: 5px;
+        border-radius: 3px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 25px;
+      }
+      footer p:hover {
+        cursor: pointer;
+      }
+
+      footer input {
+        position: absolute;
+        left: 40%;
+        top: 11px;
+        height: 35px;
+        width: 60%;
+        padding: 3px;
+        border: none;
+        outline: none;
+        font-size: 11px;
+        line-height: 15px;
+        font-family: "Open sans";
+      }
+
+  
+      main > img {
+        display: none;
+      }
+      
+      .drop {
+        display: none;
+      }
+      .arrow {
+        position: absolute;
+        left: 48.125%;
+        top: 760px;
+        width: 27px;
+        height: 19px;
+      }
+.bottom{
+  position:absolute ;
+  width: 100%;
+  height: 273px;
+  top: 100vh;
+  background: #D4FAFC;
+}
+.bottom p{
+  position: absolute;
+width: 20%;
+left: 10%;
+top: 9%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+color: #121212;
+}
+.bottom img{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.bottom .img1{
+  left: 12%;
+  width: 24%;
+  height: 27.5%;
+}
+.bottom .img2{
+  left: 45%;
+  width: 14%;
+  height: 49%;
+}
+.bottom .img3{
+  left: 67%;
+width: 20%;
+height: 49%;
+}
+      @media (max-width: 480px) {
+        .icon {
+          display: block;
+        }
+        .menu {
+          display: none;
+        }
+        .icon img {
+          position: absolute;
+          width: 8%;
+          height: 2px;
+          left: 85.15%;
+        }
+        .icon .img1 {
+          top: 23px;
+        }
+        .icon .img2 {
+          top: 31px;
+        }
+        .icon .img3 {
+          top: 39px;
+        }
+        .backimg {
+          width: 100%;
+          height: 844px;
+        }
+        nav {
+          width: 91.66%;
+          height: 64px;
+          left: 4.16%;
+          top: 18px;
+        }
+        .logo img {
+          left: 5.45%;
+          top: 11px;
+          height: 45.65px;
+          width: 50px;
+        }
+        .logo h1 {
+          width: 164px;
+          height: 13px;
+          left: 28.4%;
+          top: 26px;
+
+          font-family: "Montserrat";
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+
+          letter-spacing: 0.32em;
+        }
+        main > img {
+          width: 67.77%;
+          height: 293.8px;
+          position: absolute;
+          top: 119px;
+          left: 16.11%;
+          display: block;
+        }
+        .image {
+          display: none;
+        }
+        .heading {
+          width: 81.94%;
+          max-width: 333px;
+          height: 104px;
+          left: 8.88%;
+          top: 448px;
+
+          font-size: 32px;
+
+          font-weight: bold;
+
+          line-height: 39.13px;
+        }
+        .content {
+          width: 73.8%;
+          max-width: 302px;
+          height: 66px;
+          left: 9%;
+          top: 572px;
+          font-size: 16px;
+
+          line-height: 22px;
+        }
+        footer {
+          width: 82.7%;
+          min-width: 103px;
+          height: 42px;
+          left: 8.61%;
+          top: 688px;
+        }
+        footer p {
+          width: 34.22%;
+          height: 15px;
+          left: 5%;
+          top: 9px;
+
+          font-family: "Open sans";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 11px;
+          line-height: 15px;
+        }
+        footer input {
+          position: absolute;
+          left: 37.5%;
+          top: 11px;
+          height: 19px;
+          width: 60.4%;
+          padding: 3px;
+          border: none;
+          outline: none;
+        }
+
+        .bottom {
+          top: 830px;
+          height: 30%;
+        }
+        .bottom p{
+          width: 80%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .bottom .img1{
+          height: 15%;
+          left: 4%;
+          width: 35%;
+        }
+        .bottom .img2{
+          height: 25%;
+          left: 41.5%;
+          width: 22.5%;
+        }
+        .bottom .img3{
+          height: 35%;
+          left: 65%;
+          top: 52%;
+          width: 35%;
+        }
+        .drop .img1 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 33%;
+          top: 90px;
+        }
+        .drop .img2 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left:54%;
+          top: 90px;
+        }
+        .drop .img3 {
+          position: absolute;
+          width: 1px;
+          height: 15px;
+          left: 73%;
+          top: 90px;
+        }
+        .drop a {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          position: absolute;
+          width: 15.15%;
+          height: 15px;
+          top: 90px;
+          text-decoration: none;
+          color: white;
+        }
+        .a1 {
+          left: 19%;
+        }
+
+        .a2 {
+          left: 38%;
+        }
+        .a3 {
+          left: 59%;
+        }
+        .a4 {
+          left: 78%;
+        }
+        .arrow {
+          left: 46.11%;
+          top: 777px;
+        }
+        .arrow {
+          left: 46.11%;
+          top: 777px;
+        }
+
+      }
+      @media (min-height:930px){
+        .heading{
+top: 260px;
+        }
+        .content{
+       top:530px;
+        }
+        main div img{
+          top:200px
+        }
+        footer{
+          top: 720px;
+        }
+        .arrow{
+          top: 830px;
+        }
+
+      }
+      @media (min-height:1000px){
+        .heading{
+top: 300px;
+        }
+        .content{
+       top:570px;
+        }
+        main div img{
+          top:240px
+        }
+        footer{
+          top: 760px;
+        }
+        .arrow{
+          top: 870px;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <img class="backimg" src="Rectangle3.png" alt="" />
+    <div class="background">
+      <nav id="nav">
+        <div class="logo">
+        <a href="index.html"><img src="Vector.png" alt="" /></a>  
+
+          <h1>NEOS HEALTHTECH</h1>
+        </div>
+        <div class="menu">
+         
+         <a class="aide" href="aide.html">AIDE</a>
+          <img class="img3" src="Line 2 (1).png" alt="|" />
+          <a class="flow" href="flow.html">FLOW</a>
+          <img class="img4" src="Line 2 (1).png" alt="|" />
+          <a class="link" href="link.html">LINK</a>
+          <img class="img1" src="Line 2 (1).png" alt="|" />
+          <a class="team" href="team.html">TEAM</a>
+          <img class="img2" src="Line 2 (1).png" alt="|" />
+          <a class="access" href="#">GET ACCESS</a>
+        </div>
+        <div class="icon" id="icon">
+          <img class="img1" src="Rectangle 83.png" alt="" />
+          <img class="img2" src="Rectangle 83.png" alt="" />
+          <img class="img3" src="Rectangle 83.png" alt="" />
+        </div>
+        <div class="drop" id="drop">
+          <a class="a1" href="aide.html">AIDE</a>
+          <img class="img1" src="Line 2 (1).png" alt="" />
+          <a class="a2" href="flow.html">FLOW</a>
+          <img class="img2" src="Line 2 (1).png" alt="" />
+          <a class="a3" href="link.html">LINK</a>
+          <img class="img3" src="Line 2 (1).png" alt="" />
+          <a class="a4" href="team.html">TEAM</a>
+      
+        </div>
+      </nav>
+      <main>
+        <img src="main page vector 1 (1).png" alt="" />
+        <div>
+          <div class="heading">
+            <b style="color: #b3e3e6">Maximise </b> your scan center’s output
+            with <b style="color: #b3e3e6"> AI.</b> 
+          </div>
+          <div class="content">
+            We believe with the power of AI we can increase productivity and
+            reduce the turn around time within a scan center.
+          </div>
+        </div>
+        <div class="image">
+         <img src="main page vector.png" alt="">
+        </div>
+      </main>
+      <footer>
+        <p id="clickforaccess">Request Access</p>
+        <img class="x" src="Line 2 (1).png" alt="" />
+        <input type="email" id="input" placeholder="Enter your mail ID here" />
+      </footer>
+      <a href="inner.html"
+        ><img class="arrow" src="Vectar.png" alt="" id="arrow"
+      /></a>
+    </div>
+    <div class="bottom" id="bottom">
+      <p>Trusted partners</p>
+      <img class="img1" src="Usmanpura_logo.png">
+    <img  class="img2" src="Amazon_Web_Services-Logo.png" alt="">
+    <img  class="img3" src="nvidia-inception-program-badge-rgb-for-screen.png" alt=""> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      let x = document.getElementById("icon");
+      let y = document.getElementById("drop");
+      let z = document.getElementById("nav");
+      let a = document.getElementById("clickforaccess");
+      let b = document.getElementById("input");
+      let c = document.getElementById("arrow");
+      let x1=0;
+      x.addEventListener("click", function () {
+        if (x1 == 0) {
+          y.style.display = "block";
+          z.style.height = "150px";
+          z.style.zIndex = "5";
+          document.querySelector(".icon .img1").style.display="none"
+          document.querySelector(".icon .img3").style.display="none"
+          document.querySelector(".icon .img2").style.height="3px"
+          x1 = 1;
+
+        } else {
+          y.style.display = "none";
+          z.style.height = "64px";
+          x1 = 0;
+          document.querySelector(".icon .img1").style.display="block"
+          document.querySelector(".icon .img3").style.display="block"
+          document.querySelector(".icon .img2").style.height="2px"
+        }
+      });
+     
+      let ans = 0;
+      window.addEventListener("scroll", function () {
+        let scrollable =
+          document.documentElement.scrollHeight - window.innerHeight;
+        let scrolled = window.scrollY;
+        if (Math.ceil(scrolled) == scrollable) {
+          ans++;
+        }
+        if (ans == 1) {
+          ans = 0;
+          setInterval(function(){
+            window.open("inner.html", "_self");
+          },2000)
+         
+        }
+      });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      a.addEventListener("click", function () {
+        let mes = b.value + " wants to collaborate";
+        let sub = b.value;
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "neoshealthtech@gmail.com",
+          Password: "rmllhjiiwvfimduc",
+          To: "vignesh@neoshealthtech.com",
+          From: "neoshealthtech@gmail.com",
+          Subject: sub,
+          Body: mes,
+        }).then(function (message) {
+          if (message == "OK") alert("Our team would contact you shortly");
+          else alert("error! please try again later");
+        });
+      });
+    </script>
+  </body>
+</html>

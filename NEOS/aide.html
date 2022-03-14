@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+       background: linear-gradient(52.05deg, rgba(0, 0, 0, 0.5) 50.29%, rgba(211, 106, 47, 0.5) 99.55%), linear-gradient(232.89deg, rgba(0, 0, 0, 0.5) 44.72%, rgba(255, 0, 0, 0.5) 107.22%), linear-gradient(118.03deg, rgba(18, 18, 18, 0) 61.68%, rgba(211, 181, 105, 0.275) 95.25%), linear-gradient(126.92deg, rgba(18, 18, 18, 0) 40.13%, #E90000 87.43%);
+        
+       width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 140vh;
+      transition: background-image 0.5;
+        
+        
+      }
+      header h1 {
+        position: fixed;
+        left: 14.51%;
+        top: 6%;
+        width: 447px;
+        height: 29px;
+        color: white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.32em;
+      }
+main img{
+position: absolute;
+top: 60.71%;
+left: 30.79%;
+height: 42.28%;
+aspect-ratio: 1.61/1;
+left: 50%; transform: translateX(-50%);
+transition: opacity 0.5s;
+opacity: 0.2;
+}
+.logo{
+      position: fixed;
+        left: 5.58%;
+        top: 3%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+      footer {
+        position: absolute;
+        top: 100%;
+        height: 30%;
+        width: 100%;
+      }
+      footer h2 {
+        text-transform: uppercase;
+        position: absolute;
+        top: 39.625%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+      }
+      footer img {
+        width: 27px;
+        height: 19px;
+        top: 99.625%;
+        left: 49.1%;
+        position: absolute;
+      }
+      .vert {
+        position: fixed;
+        left: 12.71%;
+        top: 5.6%;
+        width: 2px;
+        height: 45px;
+      }
+      nav {
+        position: fixed;
+        display: none;
+        background: rgba(255, 255, 255, 0.1);
+        
+        filter: blur(50px);
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        
+      }
+     .nav{
+      left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        position: fixed;
+        display: none;
+        color: white;
+     }
+      
+      .nav a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        top: 13px;
+        color: white;
+        height: 30px;
+      }
+      .nav a:nth-child(1){
+        left: 2.62%;
+      }
+      .nav a:nth-child(2){
+        left: 24.05%;
+      }
+      .nav a:nth-child(3){
+        left: 47.52%;
+      }
+     
+      .nav1 {
+        left: 4.8%;
+        top: 8%;
+        height: 55px;
+        width: 46.875%;
+        position: fixed;
+        display: none;
+      }
+      footer h2{
+        text-align: center;
+      }
+      .nav1 a {
+        letter-spacing: 0.32em;
+        position: absolute;
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        top: 13px;
+        z-index: 99999999;
+        height: 30px;
+        color: white;
+      }
+      .nav1 a:nth-child(1) {
+        left: 2.62%;
+      }
+      .nav1 a:nth-child(2) {
+        left: 20.05%;
+      }
+      .nav1 a:nth-child(3) {
+        left: 40.52%;
+      }
+     
+      @media(max-width:480px){
+        .logo{
+        left: 4.5%;
+        top: 3.8%;
+        width: 10%;
+        aspect-ratio: 1;
+     }
+     
+        .vert {
+          left: 16.6%;
+          height: 39px;
+          top: 4%;
+          position: fixed;
+        }
+        header h1{
+          font-size: 20px;
+        line-height: 24px;
+        left: 18.73%;
+        width: 300px;
+        top: 5%;
+        
+      }
+      footer h2{
+        display: none;
+      }
+      
+      footer img{
+        top: 79.95%;
+      }
+       body{
+         height: 138vh;
+       }
+      main img{
+        left: 50%;
+        transform: translateX(-50%);
+        aspect-ratio: 1.61/1;
+top: 72.57%;
+height: 20.94%;
+      }
+      nav {
+        left: 4.8%;
+        top: 8%;
+        height: 28px;
+        width: 81.25%;
+        
+      }
+     .nav{
+      left: 4.8%;
+        top: 8%;
+        height: 28px;
+        width: 81.25%;
+     }
+      
+      .nav a {
+        font-size: 12px;
+        line-height: 15px;
+        top: 13px;
+        color: white;
+        height: 15px;
+      }
+      .nav a:nth-child(1){
+        left: 6.4%;
+      }
+      .nav a:nth-child(2){
+        left: 29.59%;
+      }
+      .nav a:nth-child(3){
+        left: 50.52%;
+      }
+      
+      .nav1 {
+          left: 4.8%;
+          top: 8.1%;
+          height: 28px;
+          width: 81.25%;
+        }
+
+        .nav1 a {
+          font-size: 12px;
+          line-height: 15px;
+          top: 13px;
+          color: white;
+          height: 15px;
+        }
+        .nav1 a:nth-child(1) {
+          left: 6.4%;
+        }
+        .nav1 a:nth-child(2) {
+          left: 25.59%;
+        }
+        .nav1 a:nth-child(3) {
+          left: 45.52%;
+        }
+        @media(max-width:360px){
+          header h1{
+            font-size: 18px;
+            left: 19%;
+          }}
+
+    }
+    @media(min-height:1000px){
+      .logo{
+      position: fixed;
+        left: 5.58%;
+        top: 4%;
+        width: 5%;
+        aspect-ratio: 1;
+     }
+    }
+    
+    </style>
+  </head>
+  <body>
+    <nav> </nav>
+    <div class="nav">    <a href="index.html">HOME</a>
+     <a href="team.html">TEAM</a>
+    
+     <a id="product">PRODUCTS</a></div> 
+     <div class="nav1">
+      <a href="aide.html">AIDE</a>
+      <a href="flow.html">FLOW</a>
+      <a href="link.html">LINK</a>
+    </div>
+    <header>
+      <a href="index.html"><img class="logo" src="Vector.png" alt=""></a> 
+      <img src="Line 44.png" class="vert" alt="" />
+      <h1>NEOS HEALTHTECH</h1>
+    </header>
+    <main>
+       <img src="Group 112 (1).png" alt=""> 
+
+     
+      
+    </main>
+
+    <footer>
+      <h2>
+        AI-powered assistive diagnostic platform to improve clinical outcomes </h2>
+  <a href="aide_detection.html"> <img src="Vectar.png" alt="" /> </a>
+     
+    </footer>
+    <br /><br /><br /><br />
+
+    <script>
+     var w,x,y,z,t;
+      window.addEventListener("scroll", function () {
+        let scrolled = window.scrollY;
+        let scrollable =
+          document.documentElement.scrollHeight - window.innerHeight;
+        if (scrolled <= scrollable * 0.3) {
+
+         
+            document.querySelector("body").style.background =
+            "linear-gradient(52.05deg, rgba(0, 0, 0, 0.5) 50.29%, rgba(211, 106, 47, 0.5) 99.55%), linear-gradient(232.89deg, rgba(0, 0, 0, 0.5) 44.72%, rgba(255, 0, 0, 0.5) 107.22%), linear-gradient(118.03deg, rgba(18, 18, 18, 0) 61.68%, rgba(211, 181, 105, 0.275) 95.25%), linear-gradient(126.92deg, rgba(18, 18, 18, 0) 40.13%, #E90000 87.43%)";
+          
+         
+            document.querySelector("main img").style.opacity=0.2;
+       
+        
+        
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        let scrollable =
+          document.documentElement.scrollHeight - window.innerHeight;
+        let scrolled = window.scrollY;
+        if (Math.ceil(scrolled) >= 0.5 * scrollable) {
+
+        
+            document.querySelector("body").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(52.05deg, rgba(0, 0, 0, 0.5) 50.29%, rgba(211, 106, 47, 0.5) 99.55%), linear-gradient(232.89deg, rgba(0, 0, 0, 0.5) 44.72%, rgba(255, 0, 0, 0.5) 107.22%), linear-gradient(118.03deg, rgba(18, 18, 18, 0) 61.68%, rgba(211, 181, 105, 0.275) 95.25%), linear-gradient(126.92deg, rgba(18, 18, 18, 0) 40.13%, #E90000 87.43%)";
+           
+            document.querySelector("main img").style.opacity=1;
+        
+          }
+          
+        
+         
+          
+       } );
+     
+
+        let ans = 0;
+      window.addEventListener("scroll", function () {
+        let scrollable =
+          document.documentElement.scrollHeight - window.innerHeight;
+        let scrolled = window.scrollY;
+        if (Math.ceil(scrolled) == scrollable) {
+          ans++;
+        }
+        if (ans == 1) {
+          ans = 0;
+          setInterval(function(){
+            window.open("aide_detection.html", "_self");
+          },500)
+         
+        }
+      });
+    </script>
+  </body>
+</html>
